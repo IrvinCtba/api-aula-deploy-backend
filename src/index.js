@@ -19,7 +19,7 @@ app.get("/usuarios", async (req, res) => {
 });
 
 app.get("/", async (req, res) => {
-  return res.json("API ok");
+  return res.json("Oy Mari, bora casar?");
 });
 
 const port = process.env.PORT || 3000;
