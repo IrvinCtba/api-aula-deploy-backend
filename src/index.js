@@ -3,8 +3,10 @@ require("dotenv").config();
 const express = require("express");
 const knex = require("./conexao.js");
 const app = express();
+const cors = require("cors");
 
 app.use(express.json());
+app.use(cors());
 
 app.get("/usuarios", async (req, res) => {
   try {
